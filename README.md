@@ -4,11 +4,11 @@ These values could be overwritten as deemed nececcery.
 
 To execute the playbook, run the following:
 
-** ansible-playbook -i inventory playbook.yml **
+**ansible-playbook -i inventory playbook.yml**
 
 To override one of the variables, you could use extra-vars as shown below.
 
-** ansible-playbook -i inventory playbook.yml --extra-vars 'receipiant=James' **
+**ansible-playbook -i inventory playbook.yml --extra-vars 'receipiant=James'**
 
 This overrides the receipiant name.
 

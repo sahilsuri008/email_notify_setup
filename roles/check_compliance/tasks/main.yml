@@ -1,0 +1,19 @@
+---
+# tasks file for check_compliance
+
+- name: Check 1
+  shell: echo True
+  register: check_1_result
+
+- name: Check 2
+  shell: echo Exempt
+  register: check_2_result
+
+- name: Check 3
+  shell: echo False
+  register: check_3_result
+
+- name: Check 4
+  shell: echo Exempt
+  register: check_4_result
+

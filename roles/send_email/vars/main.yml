@@ -1,0 +1,5 @@
+---
+# vars file for send_email
+receipiant: "Receipiant's name"
+receiver: "sahil.suri@emerson.com"
+sender: "sahil@example.com"

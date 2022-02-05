@@ -1,0 +1,29 @@
+<html>
+<style>
+thead th { text-align:center; background:lightgrey; color:black}
+</style>
+ <body>
+Hi {{receipiant}},<br>
+
+<br>You have requested transition of Supporting Services to Operations under PM20 XX. 
+<br>This can be done once the servers are compliant as measured under the compliance checklists for Linux/Windows</br>
+
+<br>**********************
+<br><b>Complinace of servers</b>
+<br>**********************
+<br><br>
+
+<table cellpadding="0" cellspacing="0" border="1">     
+<thead><tr><th>Server Name</th><th>Check 1</th><th>Check 2</th><th>Check 3</th><th>Check 4</th></tr></thead>
+{% for host in play_hosts %}
+<tr><td>{{ host }}</td><td>{{ hostvars[host]['check_1_result']['stdout'] }}</td><td>{{ hostvars[host]['check_2_result']['stdout'] }}</td><td>{{ hostvars[host]['check_3_result']['stdout'] }}</td><td>{{ hostvars[host]['check_4_result']['stdout'] }}</td></tr>
+{% endfor %}
+</table>
+
+<br>Please remediate the above non-complaince to progress the request</br>
+<br>Regards,
+<br>Hosting Automation
+<br><br> ** This is an auto-generated email. Please do not reply to this email. **
+
+ </body>
+</html>

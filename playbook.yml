@@ -1,0 +1,6 @@
+---
+- name: Playbook that uses a role to send email to users
+  hosts: myhosts
+  roles:
+  - check_compliance
+  - send_email

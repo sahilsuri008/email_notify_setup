@@ -1,0 +1,12 @@
+---
+# tasks file for send_email
+
+- name: Send email notification
+  mail:
+   to: "{{ receiver }}"
+   from: "{{ sender }}"
+   subject: 'Server Compliance Check Status email'
+   body: "{{ lookup('template','templates/email_body.html.j2') }}"
+   subtype: html
+   charset: utf8
+  delegate_to: localhost

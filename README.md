@@ -12,6 +12,8 @@ To override one of the variables, you could use extra-vars as shown below.
 
 This overrides the receipiant name.
 
+To update the sender, receiver, or recipiant name, modify the variables defined in email_notify_setup/roles/send_email/vars/main.yml file.
+
 
 Given below is a demo image of how the resulting email will look like in Outlook
 
